@@ -75,7 +75,7 @@ int main() {
 
   // Imprime a coleção ordenada
   for (i = 0; i < tamanho; i++) {
-      printf("%d ", colecao[i]);
+    printf("%d ", colecao[i]);
   }
 
   return 0;
