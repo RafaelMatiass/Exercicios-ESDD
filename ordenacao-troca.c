@@ -1,14 +1,18 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 void bubble_sort (int colecao[], int tamanho) {
-  int i, j, pos_menor, aux;
+  int i, j, aux;
+  int trocou = true;
   
-  for (i = 0; i < tamanho; i++) {
-    for(j=0; j<tamanho; j++){
+  for (i = 0; i < tamanho && trocou; i++) {
+    trocou = false;
+    for(j=0; j<tamanho-(1+i); j++){
       if(colecao[j] > colecao[j+1]){
         aux = colecao[j];
         colecao[j] = colecao[j+1];
         colecao[j+1] = aux;
+        trocou = true;
       }
     }
   }
