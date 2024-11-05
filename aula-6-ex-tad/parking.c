@@ -108,3 +108,19 @@ int exitParking(T_Parking parking) {
   }
   return carPlate;
 }
+
+void showParking(T_Parking parking) {
+  if (parking != NULL) {
+    printf("Estacionamento invélido.\n");
+  } else {
+    printf("Estacionamento: \n");
+    for (int i = 0; i < parking->occupiedSpaces; i++) {
+      printf("\t->%04d\n", parking->parkingSpaces[i]);
+    }
+  }
+}
+
+void destroyParking(T_Parking parking) {
+  free(parking->parkingSpaces);
+  free(parking);
+}
