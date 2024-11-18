@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 100
-#define INDEX_SIZE 10 // tamanho dos indices de tabela
+#define SIZE 1000000
+#define INDEX_SIZE 1000 // tamanho dos indices de tabela
 
 typedef struct {
     int kindex;  // chave do índice
