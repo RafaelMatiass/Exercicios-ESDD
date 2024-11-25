@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <time.h>
 
-#define TAM 100
+#define TAM 1000000
 // 1000000
 
 void merge_sort(int colecao[], int inicio, int fim);

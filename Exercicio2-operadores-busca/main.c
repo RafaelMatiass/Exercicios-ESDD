@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include "lib.h"
 
-#define SIZE 100
-#define INDEX_SIZE 10 // Tamanho do índice
+#define SIZE 1000000
+#define INDEX_SIZE 1000 
 
 int main() {
   int vetor[SIZE];
-  int key = 60;  // Chave a ser buscada
-  bloco_indice indice[INDEX_SIZE]; // Array de índice
+  int key = 38266;  
+  bloco_indice indice[INDEX_SIZE]; 
 
-  // Gera valores aleatórios e ordena o vetor
   gerar_crescente(vetor, SIZE);
 
-  // Cria o índice
   cria_indice(vetor, indice, SIZE, INDEX_SIZE);
 
-  // Realiza a busca sequencial indexada
   int pos = busca_sequencial_indexada(vetor, SIZE, indice, INDEX_SIZE, key);
 
   if (pos != -1) {
