@@ -13,8 +13,6 @@ bool is_full(T_Queue queue);
 
 bool is_empty(T_Queue queue);
 
-bool enqueue(T_Queue queue, T_Info element); //Entra na fila
+bool enqueue(T_Queue queue, T_Info element);    // Entra na fila
 
-//T_Info dequeue(T_Queue);
-
-bool dequeue(T_Queue queue, T_Info* element); //Sai da fila
+bool dequeue(T_Queue queue, T_Info* elemento);  // Sai da fila
