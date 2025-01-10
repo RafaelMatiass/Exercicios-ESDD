@@ -6,7 +6,6 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
 #include <allegro5/allegro_image.h>
-#include "game.h"
 
 long frames;
 long score;
@@ -872,7 +871,7 @@ void hud_draw()
             "G A M E  O V E R"
         );
 }
-bool key[ALLEGRO_KEY_MAX] = {false};
+bool keyy[ALLEGRO_KEY_MAX] = {false};
 
 // --- main ---
 
